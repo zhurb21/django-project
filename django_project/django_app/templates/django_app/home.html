@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Cities and Population</h1>
+		<br>
+
+		<div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h4>Asia</h4>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+                            <th>ID</th>
+							<th>City</th>
+							<th>Country</th>
+							<th>Population</th>
+						</tr>
+
+						{% for i in asias %}
+							<tr>
+                                <td>{{i.id}}</td>
+								<td>{{i.city}}</td>
+								<td>{{i.country}}</td>
+								<td>{{i.population}}</td>
+							</tr>
+						{% endfor %}
+						
+					</table>
+				</div>
+			</div>
+			
+        </div>
+
+        <div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h4>America</h4>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+                            <th>ID</th>
+							<th>City</th>
+							<th>Country</th>
+							<th>Population</th>
+						</tr>
+
+						{% for i in americas %}
+							<tr>
+                                <td>{{i.id}}</td>
+								<td>{{i.city}}</td>
+								<td>{{i.country}}</td>
+								<td>{{i.population}}</td>
+							</tr>
+						{% endfor %}
+						
+					</table>
+				</div>
+			</div>	
+        </div>
+
+        <div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h4>Africa</h4>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+                            <th>ID</th>
+							<th>City</th>
+							<th>Country</th>
+							<th>Population</th>
+						</tr>
+
+						{% for i in africas %}
+							<tr>
+                                <td>{{i.id}}</td>
+								<td>{{i.city}}</td>
+								<td>{{i.country}}</td>
+								<td>{{i.population}}</td>
+							</tr>
+						{% endfor %}
+						
+					</table>
+				</div>
+			</div>	
+        </div>
+
+        <div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h4>Europe</h4>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+                            <th>ID</th>
+							<th>City</th>
+							<th>Country</th>
+							<th>Population</th>
+						</tr>
+
+						{% for i in europes %}
+							<tr>
+                                <td>{{i.id}}</td>
+								<td>{{i.city}}</td>
+								<td>{{i.country}}</td>
+								<td>{{i.population}}</td>
+							</tr>
+						{% endfor %}
+						
+					</table>
+				</div>
+			</div>	
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Города и население</h1>
+        <table class = "table">
+        {% for i in asias %}
+            <tr>
+            <td>{{i.city}}</td>
+            </tr>
+        {% endfor %}
+
+        </table>
+        
+    </body>
+</html> -->
